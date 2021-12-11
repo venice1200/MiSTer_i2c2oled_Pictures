@@ -1,2 +1,2 @@
 # MiSTer_i2c2oled_Pictures
-Pictures for the MiSTer_i2c2oled Add-On 
+This is the Picture Repository for the MiSTer **i2c2oled** Add-On  
