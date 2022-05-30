@@ -7,7 +7,7 @@ on:
       - main
     paths:
       - ".github/workflows/publish_pix_data.yml"
-      - "Pictures/Pix/*.pix"
+      - "**/*.pix"
 
 name: Generate Pix List for Viewer
 
