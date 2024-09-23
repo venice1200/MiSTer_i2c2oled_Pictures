@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ${{ github.ref }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Generate data.js
         env:
@@ -55,7 +55,7 @@ jobs:
         shell: python
 
       - name: Archive data JSON
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: data-i2c-pix-json
           path: data_i2c_pix.json
@@ -67,12 +67,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ${{ github.ref }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
 
       - name: Download data JSON
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: data-i2c-pix-json
 
